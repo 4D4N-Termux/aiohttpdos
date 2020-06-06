@@ -33,9 +33,9 @@ async def make_request (url: str):
     async with aiohttp.ClientSession () as session:
         try:
             async with session.get (url, headers = initHeaders ()) as response:
-                print ('%sRequest for %s%s : %sDone%s' % (Fore.BLUE, Fore.GREEN, url, Fore.GREEN, Fore.RESET))
+                print ('%sRequest for %s%s : %sDone%s' % (Fore.BLUE, Fore.YELLOW, url, Fore.GREEN, Fore.RESET))
         except:
-            print ('%sRequest for %s%s : %sError%s' % (Fore.BLUE, Fore.GREEN, url, Fore.RED, Fore.RESET))
+            print ('%sRequest for %s%s : %sError%s' % (Fore.BLUE, Fore.YELLOW, url, Fore.RED, Fore.RESET))
 
 
    
